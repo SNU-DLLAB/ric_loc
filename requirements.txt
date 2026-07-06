@@ -1,0 +1,13 @@
+# RIC-Loc runtime dependencies.
+# The VGGT source tree + checkpoint and the MegaLoc weights are provided separately (see README).
+# Reference environment: torch 2.3.1+cu118. Install the torch/torchvision build matching your CUDA.
+
+numpy
+torch>=2.0
+torchvision
+h5py
+Pillow
+safetensors
+
+# Optional: faiss accelerates retrieval nearest-neighbor search (falls back to numpy L2 if absent).
+# faiss-cpu   # or faiss-gpu
