@@ -2,6 +2,8 @@
 
 **Reference-Induced Consensus for Selective Posed-Reference Visual Localization**
 
+[![arXiv](https://img.shields.io/badge/cs.CV-2607.04722-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2607.04722)
+
 RIC-Loc localizes a query image against a posed reference map — and, just as importantly, tells you **when to trust the result**. It uses [VGGT](https://github.com/facebookresearch/vggt) as a multi-view geometry front-end (not a black-box pose regressor): one forward pass over `[query + retrieved references]` lifts each reference's known map pose into a query-pose hypothesis, and those hypotheses are fused into a robust pose plus a **calibrated trust signal** that drives an accept / reject decision.
 
 The method is **map-point-free**: it needs only the reference *poses*, no SfM 3D points and no query↔map 2D–3D matching.
